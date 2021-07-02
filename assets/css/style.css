@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Oswald:wght@400;700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.content{
+    padding:80px;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 97px;
+    line-height: 110px;
+    margin:0;
+    margin-bottom:40px;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    line-height: 45px;
+    font-size: 35px;
+    margin:20px 0;
+}
+.text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+.bar{
+    background-color: #006341;
+    width: 168px;
+    height: 22px;
+}
+.button{
+    display:inline-block;
+    border: 2px solid #454545;
+    padding: 10px 30px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #454545;
+}
+.button:hover{
+    background-color: #454545;
+    color: #FFF;
+}
+
+/* BARRA SUPERIOR */
+header .line{
+    background-color:#117050;
+    height:9px;
+}
+
+/* HEADER */
+.container{
+    max-width: 1140px;
+    margin:auto;
+    padding-bottom:6px;
+}
+.header-area{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height:105px;
+}
+.header-right{
+    display:flex;
+    align-items: center;
+}
+.header-left img{
+    width:64px;
+    height:64px;
+}
+.header-search form{
+    display:flex;
+    align-items: center;
+}
+.header-search input{
+    font-size:16px;
+    padding:6px 10px 6px 13px;
+    border: 1px solid rgb(173, 173, 173);
+    outline:0;
+    max-width:273px;
+    font-family: 'Open Sans';
+}
+.header-search button{
+    border:0;
+    background-color:transparent;
+    margin-left:-28px;
+    cursor: pointer;
+    padding-top:2px;
+}
+.header-search button img{
+    width:16px;
+    height:16px;
+}
+.header-menu{
+    margin-left:55px;
+    cursor:pointer;
+}
+.header-menu img{
+    width:24px;
+    height:24px;
+}
+main{
+    height:600px;
+}
+
+/* BANNER */
+.banner{
+    background-image: url('../img/bg.jpg');
+    background-position:center;
+    background-size:cover;
+    padding-top:95px;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+}
+.banner-images{
+    margin-top:60px;
+}
+.banner-images img{
+    width:160px;
+    height: 160px;
+    border: 6px solid #117050;
+    border-radius: 50%;
+    margin-right:30px;
+}
+section .container{
+    padding-left: 22px;
+}
+
+/* ÁREA1 */
+ .area1{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area1-img1{
+    background-image: url("../img/f2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:350px;
+}
+.area1-img2{
+    background-color: red;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-image: url("../img/f1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.area1-quote{
+    margin-bottom:30px;
+}
+
+/* ÁREA2 */
+.area2{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+.area2-img1{
+    background-color: green;
+    height:450px;
+    background-image: url("../img/f4.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.area2-img2{
+    background-color:red;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: url("../img/f3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ÁREA3 */
+.area3{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area3-content{
+    padding: 200px 80px;
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+    background-position: center left;
+}
+.area3-img1{
+    background-image: url('../img/f5.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+
+/* ÁREA4 */
+.area4{
+    display:grid;
+    grid-template-columns: 460px 1fr;
+    grid-template-rows: 700px 1fr;
+    background-color: #eBe9ee;
+    padding-top:5%;
+    padding-bottom:2%;
+}
+.area4-content{
+    padding-right: 60px;
+}
+.area4-img1{
+    background-image:url("../img/bg3.jpg");
+    background-position:20% 50%;
+    background-repeat: no-repeat;
+}
+
+/* ÁREA5*/  
+.area5{
+    height:700px;
+    background-image: url("../img/bg4.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+/* FOOTER */
+footer{
+    height:200px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    background-color:#333;
+    color: #FFF;
+}
+footer a{
+    text-decoration: none;
+    color:aqua;
+}
+footer a:hover{
+    color:white;
+}
+
+/* RESPONSIVIDADE */
+@media (min-width: 769px) and (max-width:1140px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width:768px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .area1{
+        grid-template-columns: 3fr 1fr;
+    }
+    .area2{
+        grid-template-columns: 1fr 3fr;
+    }
+    .area3{
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
+@media (max-width: 425px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header-menu {
+        margin-left:25px;
+    }
+    .header-search input{
+        max-width: 200px;
+    }
+    h1{
+        font-size:50px;
+        line-height: 50px;
+    }
+    .banner{
+            background-image: url('../img/bg.jpg');
+            background-position:center;
+            background-size:cover;
+            padding-top:95px;
+            background-repeat: no-repeat;
+            padding-bottom: 90px;
+        }
+       
+    .banner-images img{
+        width:70px;
+        height:70px;
+        border:3px solid #117050;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .area1, .area2, .area3, .area4{
+        grid-template-columns: 1fr;
+    }
+    .area1-content, .area2-content, .area3-content, .area4-content{
+        padding: 40px 20px;
+    }
+    .area4{
+        padding-top:0;
+        padding-bottom:0;
+        grid-template-rows: 500px;
+    }
+    .area5{
+        height:200px;
+    }
+    footer{
+        font-size: 12px;
+        padding: 40px 20px;
+    }
+}
+@media(max-width:321px){
+    .header-search input{
+        max-width: 120px;
+    }
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
+
+
+
+
